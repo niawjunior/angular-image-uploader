@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6 mx-auto">
+      <h2 class="text-center mt-5">
+        Upload
+      </h2>
+      <form class="mt-5" (ngSubmit)="upload()">
+        <div class="input-group mb-3">
+          <input style="height:100%" type="file" class="form-control" (change)="fileChangeEvent($event)" multiple aria-label="Recipient's username">
+          <div class="input-group-append">
+            <button type="submit" class="btn btn-primary">Upload</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12 mx-auto mt-5">
+      <div class="row">
+        <div class="col-4" *ngFor="let image of showImages">
+          <div class="card">
+            <div class="card-body">
+              <img src="assets/{{image.filename}}" class="img-fluid" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
