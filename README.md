@@ -6,8 +6,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ![alt text](demo.png)
 ## Download And Install
 
-### git clone https://github.com/niawjunior/angular-upload-file.git
-### cd angular-upload-file
+### git clone https://github.com/niawjunior/angular-image-uploader.git
+### cd angular-image-uploader
 ### npm install
 
 ## Config
